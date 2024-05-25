@@ -1,0 +1,275 @@
+:root{
+--bol: #423e3b;
+--blt: #6c6560;
+--sgreen: #5a9367;
+--sglt: #81b18c;
+--rosq: #ad9baa;
+--rqlt: #BFB0BC;
+--dutch: #eee5bf;
+--egg: #F6F2DF;
+}
+
+
+main{
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+#bprof{
+	margin: 1em auto 0em auto;
+	max-height: 80%;
+  border: solid var(--bol) 0.3em;
+  border-radius: 1em;
+}
+
+#sprof{
+  max-width: 50%;
+}
+
+span{
+    font-size:2em;
+    border: solid var(--bol);
+    border-style: none none solid none;
+}
+
+p {
+  margin-top: 1em;
+}
+
+/******************Individual Card Styles***************************/
+
+/*Intro card*/
+#introcard .card-in{
+	border: solid var(--bol) 0.4em;
+}
+
+#introcard .card-fr, #introcard .card-bk{
+  background-color: var(--blt);
+  color: var(--egg);
+}
+
+#name {
+  margin: none;
+}
+
+#intro{
+  margin-top: 3em;
+}
+
+/******************Service card*********************/
+#srvcard .card-fr,#srvcard .card-bk{
+	background-color: var(--sglt);
+}
+
+#srvcard .card-in{
+	border: solid var(--sgreen) 0.4em;
+}
+
+#srvcard ul{
+  width: 100%;
+  margin: 1em auto;
+  list-style: none;
+  padding: 0;
+
+}
+
+.servlist-s{
+  list-style: none;
+}
+/**************Skill card*********************/
+
+#sklcard .card-fr, #sklcard .card-bk{
+	background-color: var(--rqlt);
+}
+
+#sklcard .card-in{
+	border: solid var(--rosq) 0.4em;
+}
+
+#skltab {
+  margin-top: 0.5em;
+}
+
+#skltab i {
+  font-size: 1.5em;
+  margin: 0.3em;
+
+}
+
+.sicon{
+  border: solid black 0.1em;
+  border-right: solid black 0.25em;
+}
+
+.descc{
+  border: solid black 0.1em;
+}
+
+#edu {
+  margin: 1em auto;
+  width: 100%;
+}
+
+#edu tr{
+  margin-bottom: 1em;
+}
+
+#asu{
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#bsit{
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.foctd{
+  font-size: 1em;
+}
+
+.focuss{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/********************Project card****************/
+
+#pjcard .card-fr,#pjcard .card-bk{
+	background-color: var(--blt);
+  color: var(--egg);
+}
+
+#pjcard .card-in{
+	border: solid var(--bol) 0.4em;
+}
+
+.pjlist{
+  list-style: none;
+  margin: 3em auto;
+}
+
+.pjlist li{
+  margin-top: 1em;
+}
+
+.pjhead{
+  font-size: 1.5em;
+}
+
+#pjcard span{
+  border-color: #eee5bfff;
+}
+
+/******************Card Row Styles*********************************************/
+
+#cardsec {
+	width: 90vw;
+	margin: 2em auto;
+}
+
+#col1 {
+	margin: 1em auto 1em 1em;
+	display: inline-block;
+  width: 45%;
+}
+
+#col2 {
+	margin: 1em 1em auto 1em;
+	display: inline-block;
+  width: 45%;
+}
+
+/**********************CARD SETUP***********************************************/
+.flpcard {
+  background-color: transparent;
+  height: 40vh;
+  perspective: 1000px;
+}
+
+.card-in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 0.5em;
+}
+
+.flpcard:hover .card-in {
+  transform: rotateY(180deg);
+}
+
+.card-fr, .card-bk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-bk {
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.card-cnt {
+  margin: 1em auto;
+  width: 90%;
+}
+
+#introcard, #pjcard p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#introcard a, #pjcard a{
+  color: var(--egg);
+}
+
+/******************Accordion Styles******************/
+
+#smacc{
+  margin-top: 1em;
+}
+
+.accordion-button{
+ font-size: 0.75em;
+}
+
+#abtbut, #pjbut{
+  --bs-accordion-btn-bg: var(--bol);
+  --bs-accordion-btn-color: var(--dutch);
+  --bs-accordion-active-bg: var(--blt);
+  --bs-accordion-active-color: var(--dutch);
+}
+
+#inbod, #pjbod{
+  background-color: var(--blt);
+  color: var(--dutch);
+}
+
+#pjbod a{
+  color: var(--dutch);
+}
+
+#sklbut{
+  --bs-accordion-btn-bg: var(--rosq);
+  --bs-accordion-active-bg: var(--rqlt);  
+}
+
+#sklbod{
+  background-color: var(--rqlt);
+}
+
+#srvbut{
+  --bs-accordion-btn-bg: var(--sgreen);
+  --bs-accordion-active-bg: var(--sglt);
+}
+
+#srvbod{
+  background-color: var(--sglt);
+}

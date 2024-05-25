@@ -1,0 +1,51 @@
+:root{
+--bol: #423e3b;
+--blt: #6c6560;
+--sgreen: #5a9367;
+--sglt: #81b18c;
+--rosq: #ad9baa;
+--rqlt: #BFB0BC;
+--dutch: #eee5bf;
+--egg: #F6F2DF;
+}
+
+
+/* Body styles */
+
+body{
+	background-color: var(--dutch);
+	height: 100vh;
+}
+
+nav{
+	border: 0.25em #423e3bff;
+	border-style: solid none;
+	background-color: var(--bol);
+}
+
+.navbar{
+	--bs-navbar-color: var(--dutch);
+	--bs-navbar-brand-color: var(--dutch);
+	--bs-navbar-hover-color: var(--blt);
+	--bs-navbar-padding-y: 0.5em;
+}
+
+#soclist{
+	list-style: none;
+	margin: 0;
+}
+
+#soclist li{
+	display:inline-block;
+	font-size: 1.5em;
+	margin: 0 1em;
+}
+
+#soclist a{
+	color: var(--dutch);
+}
+
+section{
+	margin-bottom: 2em;
+}
+
